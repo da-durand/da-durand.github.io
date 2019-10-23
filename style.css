@@ -1,0 +1,83 @@
+*{
+    color: #525252;
+    font-family: 'Arial', Courier, sans-serif;
+    font-size: 1em;
+}
+
+header{
+    background-image: url(./images/header.png);
+    color: white;
+}
+nav{
+    background: turquoise;
+    font-family: 'Abel', Courier, sans-serif; 
+    font-size: 1.5em;
+}
+
+main {
+    background-image: url(./images/fond.png);
+}
+
+.media{
+    background-image: url(./images/fond-article.png);
+    padding: 1.5rem;
+}
+.btn{
+    background: linear-gradient(#FF3D00, #FF0000);
+    color: white;
+}
+
+.text-orange{
+    color: #FF3D00;
+}
+
+.img-container2 img{
+    margin: .2rem 0 .2rem 0;
+}
+
+h1{
+    font-size: 4em;
+}
+h2{
+    font-size: 3em;
+}
+h3{
+    font-size: 2em;
+}
+h4{
+    font-size: 1.5em;
+}
+
+h2, h3, h4 h6{
+    color: #2a2a2a;
+    font-family: 'Oswald', Courier, sans-serif;
+}
+
+blockquote{
+    background-image: url(./images/citation.jpg);
+    font-style: italic;
+}
+
+@media screen and (max-width: 740px){
+    .img-container2 img:nth-child(3n){
+        margin-right: 2rem;
+    }
+    nav{
+        margin-bottom: 1rem;
+    }
+    .media{
+        margin-bottom: 1rem;
+        padding: .5rem;
+    }
+    .citation{
+        padding: .5rem 0 .5rem 0;
+    }
+}
+
+.foot {
+    background-image: url(./images/footer.png);
+}
+
+.footer {
+    background-image: url(./images/bas-de-page.png);
+}
