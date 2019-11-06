@@ -1,94 +1,108 @@
-header{
-    background-image: url(./img/Star-Citizen-banner.jpg);
-    background-size: cover;
-    color: rgb(139, 2, 2);
-}
+.display-nav, header nav, header nav ul {
+  display: flex;
+  align-items: center; }
 
-main{
-    background-image: url(./img/Space-Background.jpg);
-    color: lightgray;
-}
-
-h2{
-    background: rgba(255, 251, 0, 0.247);
-    color: black;
-}
-
-footer{
-    background: rgb(97, 97, 97);
-    color: rgb(255, 255, 255);
-}
-
-ul{
-    background: rgba(0, 0, 0, 0.658);
-    border-radius: 4px;
-}
-
-ul li a{
-    color: rgb(255, 255, 255);
-    font-size: 1.5rem;
-}
-
-ul li:hover{
-    background: rgb(139, 2, 2);
-    border-radius: 4px;
-}
-
-ul li a:hover{
-    color: white;
-}
-
-.banner{
+header {
+  background-color: #3097d1; }
+  header .header-container {
+    margin: auto;
+    display: flex; }
+    @media screen and (min-width: 723px) {
+      header .header-container {
+        width: 80%; } }
+  header nav {
     width: 100%;
-}
+    padding: 1rem 0 1rem 0;
+    flex-direction: column; }
+    @media screen and (min-width: 723px) {
+      header nav {
+        flex-direction: row;
+        justify-content: space-between; } }
+    header nav ul {
+      flex-direction: row;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      justify-content: space-between; }
+    header nav li {
+      color: white;
+      margin-right: 0; }
+    header nav img {
+      width: 10%;
+      margin-right: 0; }
+    header nav .search-container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between; }
+      header nav .search-container i {
+        color: white; }
+      header nav .search-container img {
+        width: 100%;
+        border-radius: 50%; }
+      header nav .search-container .img-top-right {
+        width: 10%; }
 
-h1{
-    font-size: 2.5rem;
-}
+ul {
+  list-style: none; }
 
-.cart-container h3{
-    background: rgba(255, 0, 0, 0.411);
-    border-radius: 5px;
-}
+main {
+  background: #f5f8fa; }
+  main .main-container {
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+    padding: 2rem 0 2rem 0; }
+    main .main-container ul {
+      list-style: none; }
+      main .main-container ul img {
+        width: 100%; }
+    main .main-container .profil-col {
+      position: relative;
+      z-index: 1;
+      margin-bottom: 1.5rem;
+      width: 100%; }
+      main .main-container .profil-col img {
+        max-width: 100%; }
+      main .main-container .profil-col article {
+        margin-bottom: 2rem;
+        border: 1px gray solid;
+        border-radius: 10px; }
+      main .main-container .profil-col .profile-img {
+        background-color: white;
+        position: absolute;
+        width: 25%;
+        padding: 0.2rem;
+        border: gray solid 1px;
+        border-radius: 50%;
+        bottom: -25%;
+        left: 37.5%;
+        z-index: 5; }
+        main .main-container .profil-col .profile-img img {
+          max-width: 100%;
+          border-radius: 50%; }
+    main .main-container article {
+      background: white;
+      padding: 1rem; }
+    main .main-container .container-message {
+      background: white;
+      border: 1px solid gray; }
+      main .main-container .container-message article {
+        border-bottom: 1px solid gray; }
+        main .main-container .container-message article:nth-child(1) {
+          display: flex;
+          justify-content: center; }
+          main .main-container .container-message article:nth-child(1) input {
+            width: 100%; }
+        main .main-container .container-message article img {
+          width: 100%; }
+        main .main-container .container-message article .img-user {
+          width: 100%;
+          padding: 0; }
+          main .main-container .container-message article .img-user img {
+            border-radius: 50%;
+            width: 100%; }
+      main .main-container .container-message input {
+        margin: auto; }
 
-.cart-container .article{
-    margin-bottom: 2rem;
-    border-bottom: 2px white dashed;
-    padding-bottom: 2rem;
-}
-
-.cart-container .article button{
-    background: black;
-    color: white;
-    border: 0;
-    border-radius: 10%;
-}
-
-.cart-container .article p {
-    margin: 0;
-}
-
-@media screen and (min-width: 768px){
-    .cart-container{
-        border-right: 2px white dashed;
-    }
-}
-
-@media screen and (min-width: 1280px){
-    .header-container{
-        width: 75%;
-        margin: auto;
-    }
-
-    h1{
-        font-size: 4rem;
-    }
-
-    nav{
-        width: 50%;
-    }
-
-    .banner{
-        width: 80%;
-    }
-}
+/*# sourceMappingURL=style.css.map */

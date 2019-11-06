@@ -1,108 +1,299 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <link rel="stylesheet" href="./static/style.css">
-    <title>Document</title>
 </head>
 
 <body>
 
-    <div class="container-fluid text-center p-0">
-        <header class="p-2 pt-lg-4 pb-lg-4 ">
-            <div class="header-container d-flex justify-content-between">
+    <div class="container-fluid p-0">
 
-                <h1>Player Shop</h1>
-                <nav class="d-flex justify-content-center flex-column"> 
-                    <button class="d-lg-none nav-button"><i class="fas fa-bars"></i></button>
-                    <ul class="list-unstyled d-none d-lg-block d-lg-flex justify-content-around m-lg-0 w-100 pt-lg-2 pb-lg-2 p-1">
-                        <li class="p-lg-1">
-                            <a href="./index.html" class="text-decoration-none">Accueil</a>
-                        </li>
-                        <li class="p-lg-1">
-                            <a href="./catalog.html" class="text-decoration-none">Catalogue</a>
-                        </li>
-                        <li class="p-lg-1">
-                            <a href="#" class="text-decoration-none">Contact</a>
-                        </li>
-                        <li class="p-lg-1">
-                            <a href="./cart.html" class="text-decoration-none">Panier</a>
-                        </li>
+        <header>
+
+            <div class="row header-container no-gutters">
+
+                <nav>
+                    <ul>
+                        <img src="https://trello-attachments.s3.amazonaws.com/5db619435b43956379ddd426/5db619435b43956379ddd43d/x/1449db5f995dd58ca6bbaf55e3d183be/brand-white.png"
+                            alt="Logo">
+                        <li>HOME</li>
+                        <li>PROFILE</li>
+                        <li>MESSAGES</li>
+                        <li>DOCS</li>
                     </ul>
+
+                    <div class="search-container">
+
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        </form>
+                        <i class="fas fa-bell"></i>
+                        <div class="img-top-right">
+                            <img src="./static/img/index.jpeg" alt="image">
+                        </div>
+                    </div>
+
                 </nav>
+
             </div>
+
         </header>
-        <main class="pt-3 pb-3">
-            <div class="main-container">
-                <section>
-                    <img src="./static/img/heroesbanner.jpg" alt="" class="banner">
-                    <p class="pt-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore mollitia molestias
-                        a officiis
-                        quaerat itaque provident, modi omnis facilis. Temporibus iusto blanditiis minima assumenda
-                        reprehenderit enim nostrum accusantium unde veniam. Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Sed aut ratione nesciunt! Id ullam maxime quia sapiente voluptatum, libero,
-                        nihil iusto amet aliquid sequi obcaecati sunt nostrum illo. Ut, suscipit?</p>
-                </section>
-                <hr>
-                <section>
-                    <h2>Top des ventes</h2>
-                    <div id="carouselExampleIndicators" class="carousel slide p-5" data-ride="carousel">
-                        <ol class="carousel-indicators">
-                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                        </ol>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <a href="./product.html">
-                                    <img src="./static/img/image.png" class="d-block w-100" alt="...">
-                                    <p class="price-game mb-5 text-decoration-none text-warning">50$</p>
-                                </a>
-                            </div>
-                            <div class="carousel-item">
-                                <a href="./product.html">
-                                    <img src="./static/img/SCshop.png" class="d-block w-100" alt="...">
-                                    <p class="price-game mb-5 text-decoration-none text-warning">55$</p>
-                                </a>
-                            </div>
-                            <div class="carousel-item">
-                                <a href="./product.html">
-                                    <img src="./static/img/image.png" class="d-block w-100" alt="...">
-                                    <p class="price-game mb-5 text-decoration-none text-warning">30$</p>
-                                </a>
+
+        <main>
+
+            <div class="main-container row no-gutters">
+
+                <div class="col-12 col-md-3 border-col">
+
+                    <article class="p-0">
+
+                        <div class="profil-col">
+                            <img src="https://picsum.photos/50/25" class="card-img-top mw-100" alt="bgprofile">
+                            <div class="profile-img">
+                                <img src="./static/img/index.jpeg" class="unselect-pic" alt="profil">
                             </div>
                         </div>
-                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
-                            data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
-                            data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
-                    </div>
-                </section>
+
+
+                        <div class="card-body">
+                            <h1>DAVE GAMACHE</h1>
+                            <p class="card-text">Some quick example text to build on the card title and make up the
+                                bulk
+                                of the card's content.</p>
+                            <div class="row">
+                                <div class="col-6">
+                                    <p>AA</p>
+                                </div>
+                                <div class="col-6">
+                                    BB
+                                </div>
+                            </div>
+                        </div>
+
+                    </article>
+
+                    <article>
+
+                        <h3>About</h3>
+                        <ul>
+                            <li>Oh Canada</li>
+                            <li>Oh Marie</li>
+                            <li>Oh Djadja</li>
+                            <li>Oh Merde</li>
+                            <li>Oh 'n' t'encule</li>
+
+                        </ul>
+
+                    </article>
+
+                    <figure>
+
+                        <h3>PHOTOS</h3>
+
+                        <ul class="row">
+                            <li class="col-12 col-md-6"><img src="https://picsum.photos/50/25" alt="#"></li>
+                            <li class="col-12 col-md-6"><img src="https://picsum.photos/50/25" alt="#"></li>
+                            <li class="col-12 col-md-6"><img src="https://picsum.photos/50/25" alt="#"></li>
+                            <li class="col-12 col-md-6"><img src="https://picsum.photos/50/25" alt="#"></li>
+                            <li class="col-12 col-md-6"><img src="https://picsum.photos/50/25" alt="#"></li>
+                            <li class="col-12 col-md-6"><img src="https://picsum.photos/50/25" alt="#"></li>
+                        </ul>
+
+                    </figure>
+
+                </div>
+
+                <div class="col-12 col-md-6 container-message">
+
+                    <article>
+                        <input type="text" placeholder="Message">
+                    </article>
+
+                    <article>
+
+                        <div class="row no-gutters">
+
+                            <div class="col-2 img-user">
+                                <img src="./static/img/index.jpeg" alt="#">
+                            </div>
+
+                            <div class="col-10">
+
+                                <h2>GOGOL TWEETOS</h2>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias, recusandae,
+                                    mollitia
+                                    aliquam aliquid obcaecati cum, similique esse qui optio provident beatae veniam
+                                    voluptas
+                                    molestiae facere nobis architecto repellendus sunt nemo?</p>
+
+                                <div class="row">
+
+                                    <div class="col-8">
+                                        <img src="https://picsum.photos/50/25" alt="#">
+                                    </div>
+
+                                    <div class="col-4">
+                                        <img src="https://picsum.photos/50/25" alt="#">
+                                    </div>
+
+                                    <div class="row">
+
+                                        <div class="col-4">
+                                            <img src="https://picsum.photos/50/25" alt="#">
+                                        </div>
+
+                                        <div class="col-8">
+                                            <img src="https://picsum.photos/50/25" alt="#">
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="row">
+
+                                    <div class="col-1 img-user">
+                                        <img src="./static/img/index.jpeg" alt="#">
+                                    </div>
+
+                                    <div class="col-11">
+                                        <h3>RAMBO JOHN:</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure explicabo
+                                            ducimus unde beatae ratione recusandae rerum asperiores, dignissimos dolorum
+                                            vel obcaecati cumque cum totam dicta nobis error ipsa velit architecto.</p>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+
+                                    <div class="col-1 img-user">
+                                        <img src="./static/img/index.jpeg" alt="#">
+                                    </div>
+
+                                    <div class="col-11">
+                                        <h3>Laounizi</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure explicabo
+                                            ducimus unde beatae ratione recusandae rerum asperiores, de toute façon tweeter c'est de la merde dignissimos dolorum
+                                            vel obcaecati cumque cum totam dicta nobis error ipsa velit architecto.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </article>
+
+                    <article>
+
+                        <div class="row">
+
+                            <div class="col-1 img-user">
+                                <img src="./static/img/index.jpeg" alt="#">
+                            </div>
+
+                            <div class="col-11">
+                                <h3>RAMBO JOHN:</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure explicabo
+                                    ducimus unde beatae ratione recusandae rerum asperiores, dignissimos dolorum
+                                    vel obcaecati cumque cum totam dicta nobis error ipsa velit architecto.</p>
+                            </div>
+                        </div>
+
+                    </article>
+
+                    <article>
+
+                        <div class="row">
+
+                            <div class="col-1 img-user">
+                                <img src="./static/img/index.jpeg" alt="#">
+                            </div>
+
+                            <div class="col-11">
+                                <h3>Laounizi</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure explicabo
+                                    ducimus unde beatae ratione recusandae rerum asperiores, dignissimos dolorum
+                                    vel obcaecati cumque cum totam dicta nobis error ipsa velit architecto.</p>
+                                <img src="https://picsum.photos/50/25" alt="#">
+
+                                <div class="row">
+
+                                    <div class="col-2 img-user">
+                                        <img src="./static/img/index.jpeg" alt="#">
+                                    </div>
+
+                                    <div class="col-10">
+                                        <h3>RAMBO JOHN:</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure explicabo
+                                            ducimus unde beatae ratione recusandae rerum asperiores, dignissimos dolorum
+                                            vel obcaecati cumque cum totam dicta nobis error ipsa velit architecto.</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+                <div class="col-12 col-md-2 border-col">
+
+                    <article>
+                        <h3>SPONSO</h3>
+                        <img src="" alt="">
+                        <span>OK</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, dicta. Mollitia, voluptatum
+                            temporibus itaque dolore ut ab ex saepe velit fuga nesciunt id recusandae ipsa, dolor beatae
+                            rem. Fuga, blanditiis.</p>
+                        <a href="#">RAF</a>
+                    </article>
+
+                    <article>
+                        <h3>AIME MOI</h3>
+                        <ul>
+                            <li><img src="" alt="">
+                                <h2>Maurice</h2> <button>ACHETE MOI</button>
+                            </li>
+                            <li><img src="" alt="">
+                                <h2>Gozéf</h2> <button>ACHETE MOI</button>
+                            </li>
+                        </ul>
+                        <div class="petit-comm">
+                            <p>OKOKOK TA MAMAN</p>
+                        </div>
+                    </article>
+
+                    <footer>
+                        <p>VIVE BOOTSTRAP SINCE 1998 <a href="#">NUL</a> <a href="#">DAMIEN</a> <a href="#">NUL</a> <a
+                                href="#">BOOTSTRAP</a> <a href="#">C</a> <a href="#">MIEUX</a> <a href="#">ET</a> <a
+                                href="#">PLUS</a> <a href="#">FORT</a> <a href="#">QUE</a> <a href="#">TOI</a></p>
+                    </footer>
+
+                </div>
+
             </div>
+
         </main>
-        <footer class="p-3">
-            <p class="m-0">Copyright</p>
-        </footer>
+
     </div>
 
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
 </body>
-
-<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
-<script src="./static/script.js"></script>
 
 </html>

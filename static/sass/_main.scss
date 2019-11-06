@@ -1,0 +1,104 @@
+ul{
+    list-style: none;
+}
+main{
+    background: #f5f8fa;
+
+    .main-container{
+
+        width: $width-container;
+        margin: auto;
+        justify-content: space-between;
+        padding: $space-main 0 $space-main 0;
+
+        ul{
+            list-style: none;
+
+            img{
+                width: 100%;
+            }
+        }
+
+        .profil-col{
+            position: relative;
+            z-index: 1;
+            margin-bottom: 1.5rem;
+            width: 100%;
+
+            img{
+                max-width: 100%;
+            }
+
+            article{
+                margin-bottom: $space-main;
+                @include article-border;
+            }
+
+            .profile-img {
+                background-color: white;
+                position: absolute;
+                width: 25%;
+                padding: 0.2rem;
+                border: gray solid 1px;
+                border-radius: $img-radius;
+                bottom : -25%;
+                left: 37.5%;
+                z-index: 5;
+
+
+                img {
+                    max-width: 100%;
+                    border-radius: $img-radius;
+
+                }
+            }
+            
+
+        } 
+
+        article{
+            background: white;
+            padding: 1rem;
+        }
+
+        .container-message{
+            background: white;
+            border: 1px solid gray;
+
+
+
+            article{
+                border-bottom: 1px solid gray;
+
+                &:nth-child(1){
+                    display: flex;
+                    justify-content: center;
+
+    
+                    input{
+                        width: 100%;
+                    }
+                }
+
+                img{
+                    width: 100%;
+                }
+
+                .img-user{
+                    width: 100%;
+                    padding: 0;
+                    img{
+                        border-radius: $img-radius;
+                        width: 100%;
+                    }
+                }
+            }
+
+            
+            input{
+                margin: auto;
+
+            }
+        }
+    }
+}
